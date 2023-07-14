@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+
+.container {
+    background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position:center; 
+   
+    padding-top: 200px;
+}
+
+.row{
+    width: 40rem;
+    background-color: #fdfdfd;
+    border-radius: 30px;
+    padding: 3rem;
+    margin: auto;
+}
+
+.add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeefe;
+    border-radius: 30px;
+    padding-left: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    padding: 13px;
+    font-size: 1rem;
+    font-weight: 0.9rem;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 40px;
+    padding: 1rem 2.5rem;
+    color: #fdfdfd;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #00ff00;
+}
+
+.list {
+    margin-top: 2rem;
+}
+
+li {
+    list-style: none;
+    padding: .8rem 0.4rem .8rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    background-image: url(https://www.vhv.rs/dpng/d/515-5155393_radiobutton-unchecked-sm-clip-art-at-clker-black.png);
+    background-size: cover;
+    background-position: center;
+    top: 0.8rem;
+    left: .6rem;
+
+}
+ul li.checked{
+    color: #4b4848;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+background-image: url(https://png.pngtree.com/png-clipart/20190516/original/pngtree-check-mark-icon-design-template-vector-isolated-png-image_4085369.jpg);
+}
+
+ul li span{
+position: absolute;
+right: 0;
+top: 0.3rem;
+width: 2.7rem;
+height: 2.7rem;
+font-size:1.4rem;
+color: #555;
+line-height: 2.7rem;
+text-align: center;
+
+}
+ul li span:hover{
+    background-color: #ededed;
+    border-radius: 50%;
+}
+@media screen and (max-width: 480px) {
+    body {
+    background: linear-gradient(290deg, #c19872, #7FFFD4);
+      font-size: 12px;
+      /* width: 110%; */
+    }
+    .box{
+        width: 20rem;
+        margin: 0rem 1.5rem 0 0.3rem;
+    }
+    input{
+        width: 8rem;
+    }
+    .btn{
+        width: 4rem;
+        text-align: center;
+    padding: 1rem .5rem;
+    }
+  }
